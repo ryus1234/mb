@@ -1,0 +1,38 @@
+$navbar-color: #1d1d1d;
+$navbar-height: 50px;
+
+.tkm-navbar{
+  margin: 0;padding: 0;
+  width: 100%;
+  height: $navbar-height;
+  background-color: $navbar-color;
+  overflow: hidden;
+  position: relative;
+  .logo{
+    margin: 0;padding: 0;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    line-height: $navbar-height;
+    a{
+      display: inline-block;
+      height: 100%;
+    }
+  }
+  .item-left{
+    position: absolute;
+    left: .3em;
+    top: 50%;
+    font-size: 2em;
+    margin-top: -.7em;
+  }
+  .item-right{
+    position: absolute;
+    right: .3em;
+    top: 50%;
+    font-size: 2em;
+    margin-top: -.7em;
+  }
+}
