@@ -1,5 +1,8 @@
 $navbar-color: #1d1d1d;
 $navbar-height: 50px;
+main{
+  padding-top: $navbar-height;
+}
 
 .tkm-navbar{
   margin: 0;padding: 0;
@@ -7,7 +10,8 @@ $navbar-height: 50px;
   height: $navbar-height;
   background-color: $navbar-color;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  z-index: 999999;
   .logo{
     margin: 0;padding: 0;
     white-space: nowrap;
@@ -34,5 +38,19 @@ $navbar-height: 50px;
     top: 50%;
     font-size: 2em;
     margin-top: -.7em;
+  }
+}
+.tkm-kv-wrapper{
+  height: 500px;
+  width: 100%;
+  .kv-parallax{
+    height: inherit;
+    width: inherit;
+    background-color: yellow;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
   }
 }

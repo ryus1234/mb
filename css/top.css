@@ -1,3 +1,6 @@
+main {
+  padding-top: 50px; }
+
 .tkm-navbar {
   margin: 0;
   padding: 0;
@@ -5,7 +8,8 @@
   height: 50px;
   background-color: #1d1d1d;
   overflow: hidden;
-  position: relative; }
+  position: fixed;
+  z-index: 999999; }
   .tkm-navbar .logo {
     margin: 0;
     padding: 0;
@@ -30,3 +34,16 @@
     top: 50%;
     font-size: 2em;
     margin-top: -.7em; }
+
+.tkm-kv-wrapper {
+  height: 500px;
+  width: 100%; }
+  .tkm-kv-wrapper .kv-parallax {
+    height: inherit;
+    width: inherit;
+    background-color: yellow;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999; }
